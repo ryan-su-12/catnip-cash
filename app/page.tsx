@@ -1,9 +1,18 @@
+import Bricks from "@/components/Bricks";
+import InfoPage from "@/components/InfoPage";
+import LandingPage from "@/components/LandingPage";
+import Navbar from "@/components/Navbar";
+import NavbarLanding from "@/components/NavbarLanding";
+
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <h1>Home Page</h1>
+    <main className="flex flex-col">
+     <NavbarLanding/>
+      <LandingPage />
+      <InfoPage/>
+    
     </main>
   );
 }
